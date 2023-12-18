@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set the character set for the document -->
+    <meta charset="UTF-8" />
+    <!-- Define the viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Set the title of the HTML document -->
+    <title>Bubble game</title>
+    <!-- Link to an external stylesheet for styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main container for the game -->
+    <div id="main">
+      <!-- Panel containing game information -->
+      <div id="panel">
+        <!-- Top section of the panel displaying Hit, Timer, and Score -->
+        <div id="top">
+          <!-- Element for displaying the number of hits -->
+          <div class="ele">
+            <h2>Hit</h2>
+            <div id="hitval" class="box">0</div>
+          </div>
+          <!-- Element for displaying the remaining time -->
+          <div class="ele">
+            <h2>Timer</h2>
+            <div id="timerval" class="box">60</div>
+          </div>
+          <!-- Element for displaying the player's score -->
+          <div class="ele">
+            <h2>Score</h2>
+            <div id="scoreinc" class="box">0</div>
+          </div>
+        </div>
+        <!-- Bottom section of the panel (currently empty) -->
+        <div id="bottom"></div>
+      </div>
+    </div>
+    <!-- Include the JavaScript file for the game logic -->
+    <script src="index.js"></script>
+  </body>
+</html>
