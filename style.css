@@ -1,0 +1,361 @@
+/* Apply styles to all elements, resetting margin, padding, font-family, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Set width and height of the HTML and body elements to 100% */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the main container */
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #00bfff;
+}
+
+/* Style the panel containing game information */
+#panel {
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+
+/* Style the top section of the panel */
+#top {
+  padding: 0px 5%; /* Adjust padding for smaller screens */
+  justify-content: space-between;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #0000cd;
+}
+
+/* Style elements within the top section */
+.ele {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ele h2 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+/* Style the box elements */
+.box {
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* Style the bottom section of the panel */
+#bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 15px;
+  width: 100%;
+  height: calc(100% - 100px);
+}
+
+/* Style the bubble elements */
+.bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: white;
+  border-radius: 50%;
+  background-color: #4169e1;
+  font-size: medium;
+  font-weight: 300;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for bubbles */
+.bubble:hover {
+  cursor: pointer;
+  background-color: #0000ff;
+  transform: scale(1.1);
+}
+
+/* Media query for screens with a max-width of 1700px */
+@media only screen and (max-width: 1700px) {
+  #panel {
+    overflow: hidden;
+    width: 80%;
+    height: 85%;
+    border-radius: 10px;
+    background-color: antiquewhite;
+  }
+}
+
+/* Media query for screens with a max-width of 768px */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  #main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #2dad8d;
+  }
+  /* Adjust styles for smaller screens */
+  #panel {
+    overflow: hidden;
+    width: 80%;
+    height: 88.8%;
+    border-radius: 10px;
+    background-color: antiquewhite;
+  }
+  /* Adjust styles for smaller screens */
+  #top {
+    padding: 0px 5%; /* Adjust padding for smaller screens */
+    justify-content: space-between;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #08f418;
+  }
+  /* Adjust styles for smaller screens */
+  .ele {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  /* Adjust styles for smaller screens */
+  .ele h2 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  /* Adjust styles for smaller screens */
+  .box {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 7px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  /* Adjust styles for smaller screens */
+  #bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    width: 100%;
+    height: calc(100% - 100px);
+  }
+  /* Adjust styles for smaller screens */
+  .bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #1fa016;
+    font-size: small;
+    font-weight: 300;
+    transition: transform 0.3s ease-in-out;
+  }
+  /* Adjust hover effect for smaller screens */
+  .bubble:hover {
+    cursor: pointer;
+    background-color: #147905;
+    transform: scale(1.1);
+  }
+}
+
+/* Media query for screens with a max-width of 576px */
+@media only screen and (max-width: 576px) {
+  /* Adjust styles for smaller screens */
+  #main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #e9b75a;
+  }
+  /* Adjust styles for smaller screens */
+  #top {
+    padding: 0px 5%; /* Adjust padding for smaller screens */
+    justify-content: space-between;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #dc7923;
+  }
+  /* Adjust styles for smaller screens */
+  #panel {
+    overflow: hidden;
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    background-color: antiquewhite;
+  }
+  /* Adjust styles for smaller screens */
+  .ele {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  /* Adjust styles for smaller screens */
+  .ele h2 {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  /* Adjust styles for smaller screens */
+  .box {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 12px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  /* Adjust styles for smaller screens */
+  #bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 13px;
+    width: 100%;
+    height: calc(100% - 100px);
+  }
+  /* Adjust styles for smaller screens */
+  .bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    background-color: #1fa016;
+    font-size: small;
+    font-weight: 300;
+    transition: transform 0.3s ease-in-out;
+  }
+  /* Adjust hover effect for smaller screens */
+  .bubble:hover {
+    cursor: pointer;
+    background-color: #147905;
+    transform: scale(1.1);
+  }
+}
+
+/* Media query for screens with a max-width of 480px */
+@media only screen and (max-width: 480px) {
+  /* Adjust styles for smaller screens */
+  #main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #eb796a;
+  }
+  /* Adjust styles for smaller screens */
+  #panel {
+    overflow: hidden;
+    width: 80%;
+    height: 91.5%;
+    border-radius: 10px;
+    background-color: antiquewhite;
+  }
+  /* Adjust styles for smaller screens */
+  #top {
+    padding: 0px 5%; /* Adjust padding for smaller screens */
+    justify-content: space-between;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #fc2d2d;
+  }
+  /* Adjust styles for smaller screens */
+  .ele {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  /* Adjust styles for smaller screens */
+  .ele h2 {
+    font-weight: 450;
+    font-size: 14px;
+  }
+  /* Adjust styles for smaller screens */
+  .box {
+    color: #000;
+    font-size: 16px;
+    font-weight: 450;
+    padding: 4px 8px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  /* Adjust styles for smaller screens */
+  #bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 13px;
+    width: 100%;
+    height: calc(100% - 100px);
+  }
+  /* Adjust styles for smaller screens */
+  .bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    color: white;
+    border-radius: 50%;
+    background-color: #ec583e;
+    font-size: xx-small;
+    font-weight: 400;
+    transition: transform 0.3s ease-in-out;
+  }
+  /* Adjust hover effect for smaller screens */
+  .bubble:hover {
+    cursor: pointer;
+    background-color: #dd2a0a;
+    transform: scale(1.1);
+  }
+}
