@@ -264,7 +264,7 @@ body {
     height: 30px;
     color: white;
     border-radius: 50%;
-    background-color: #1fa016;
+    background-color: #fc972b;
     font-size: small;
     font-weight: 300;
     transition: transform 0.3s ease-in-out;
@@ -272,7 +272,7 @@ body {
   /* Adjust hover effect for smaller screens */
   .bubble:hover {
     cursor: pointer;
-    background-color: #147905;
+    background-color: #c18517;
     transform: scale(1.1);
   }
 }
